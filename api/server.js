@@ -48,10 +48,9 @@ server.put('/api/notes/:id', (req, res) => {
 		.then( notes => {
             res.status(202).json(notes)
         })
-        .catch(() => {
-            res.status(500).json({ errorMessage: "The notes was not added."})
-        })
+		.catch(err => res.status(500).json(err));
 });
+
 
 server.delete('/api/notes/:id', (req, res) => {
 	db

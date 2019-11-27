@@ -9,7 +9,6 @@ module.exports ={
 };
 
 function get() {
-    console.log('made it to the get')
     return db('notes');
 }
 
@@ -27,10 +26,11 @@ function insert (notes) {
     });
 }
 
-function update(id, changes) {
+function update(modifiedNote, idPassed){
     return db('notes')
-    .where({ id })
-    .update(changes);
+    .where({ id: idPassed })
+    .update(modifiedNote)
+    .then(numberUpdated => numberUpdated)
 }
 
 function remove(id) {
