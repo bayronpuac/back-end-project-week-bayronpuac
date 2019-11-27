@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon",
-    "start": "node index.js", 
-    "test" : "jest --watch"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,9 +20,11 @@
   "homepage": "https://github.com/bayronpuac/back-end-project-week-bayronpuac#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
     "knex": "^0.20.2",
+    "pg": "^7.14.0",
     "sqlite3": "^4.1.0"
   },
   "devDependencies": {

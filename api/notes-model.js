@@ -9,7 +9,8 @@ module.exports ={
 };
 
 function get() {
-    return('notes');
+    console.log('made it to the get')
+    return db('notes');
 }
 
 function getById(id) {

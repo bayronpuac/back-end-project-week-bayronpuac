@@ -6,7 +6,7 @@ module.exports = {
     client: 'sqlite3',
     useNullAsDefault: true,
     connection: {
-      filename: './data/notes.db3'
+      filename: './database/notes.db3'
     },
     pool: {
       afterCreate: (conn, done) => {
@@ -19,6 +19,7 @@ module.exports = {
     seeds: {
       directory: './database/seeds',
     }, 
+
   },
 
   staging: {
