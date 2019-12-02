@@ -1,6 +1,6 @@
 ## Lambda Notes
 The following is a list of items that you will need to accomplish to demonstrate mastery over your 4th Lambda School Unit
-
+Adding Ryan as a collaborator
 ## Trello Set Up
 
 - Use your existing Trello account from the Front End Project, or create a new one.
